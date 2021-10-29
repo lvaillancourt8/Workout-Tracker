@@ -23,6 +23,16 @@ router.post('/workouts', ({body}, res) => {
       });
 });
 
+// Create a new workout
+router.put('/workouts/:id', ({params, body}, res) => {
+  db.Workout.findByIdAndUpdate(params.id, {$push: { exercises: body}})
+  .then((Workoutdb) => {
+    res.json(Workoutdb);
+  })
+  .catch(err => {
+      res.json(err);
+    });
+});
 
 
 module.exports = router;
