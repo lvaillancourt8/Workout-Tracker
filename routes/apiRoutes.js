@@ -34,5 +34,16 @@ router.put('/workouts/:id', ({params, body}, res) => {
     });
 });
 
+// Get all workouts
+router.get('/workouts/range', (req, res) => {
+  db.Workout.find().sort({_id:-1}).limit(7)
+  .then(Workoutdb => {
+    res.json(Workoutdb);
+  })
+  .catch(err => {
+    res.json(err);
+  });
+});
+
 
 module.exports = router;
