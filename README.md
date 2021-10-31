@@ -2,9 +2,9 @@
 Code the backend of a fitness tracker using Mongo database with a Mongoose schema and routes in Express.
 
 ## Project Links
-Link to the GitHub Repository: [GitHub Repo]()
+Link to the GitHub Repository: [GitHub Repo](https://github.com/lvaillancourt8/Workout-Tracker)
 
-Link to the Live App: [Live App]()
+Link to the Live App: [Live App](https://lv-fitness-tracker.herokuapp.com)
 
 ## User Story
 
@@ -32,3 +32,4 @@ The user should be able to:
 
 The following images show the web application's appearance and functionality:
 
+![fitness tracker](https://user-images.githubusercontent.com/55712456/139601449-a7335250-2016-4d02-95c7-522fd51d5876.jpg)
